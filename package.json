@@ -1,15 +1,15 @@
 {
-  "name": "makenew-deck-bespoke.js",
-  "version": "1.5.2",
-  "description": "Bespoke.js deck skeleton.",
+  "name": "deck-doctoral-thesis",
+  "version": "0.0.0",
+  "description": "Spin and valley physics in two dimensional systems: Graphene and superconducting transition metal dichalcogenides.",
   "private": true,
   "keywords": [
     "bespoke.js",
     "brunch"
   ],
-  "homepage": "https://github.com/makenew/deck-bespoke.js",
-  "bugs": "https://github.com/makenew/deck-bespoke.js/issues",
-  "repository": "makenew/deck-bespoke.js",
+  "homepage": "https://github.com/evansosenko/deck-doctoral-thesis",
+  "bugs": "https://github.com/evansosenko/deck-doctoral-thesis/issues",
+  "repository": "evansosenko/deck-doctoral-thesis",
   "license": "CC-BY-SA-4.0",
   "author": {
     "name": "Evan Sosenko",

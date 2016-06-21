@@ -1,205 +1,25 @@
-# Bespoke.js Deck Skeleton
+# Physics Doctoral Thesis Defense
 
-[<img src="https://makenew.github.io/makenew.svg" alt="Make New" height="20">](https://makenew.github.io/)
-[![GitHub release](https://img.shields.io/github/release/makenew/deck-bespoke.js.svg)](https://github.com/makenew/deck-bespoke.js/releases)
+[![GitHub release](https://img.shields.io/github/release/evansosenko/deck-doctoral-thesis.svg)](https://github.com/evansosenko/deck-doctoral-thesis/releases)
 [![GitHub license](https://img.shields.io/badge/license-CC--BY--SA--4.0-blue.svg)](./LICENSE.txt)
-[![David](https://img.shields.io/david/makenew/deck-bespoke.js.svg)](https://david-dm.org/makenew/deck-bespoke.js)
-[![David](https://img.shields.io/david/dev/makenew/deck-bespoke.js.svg)](https://david-dm.org/makenew/deck-bespoke.js#info=devDependencies)
-[![Travis](https://img.shields.io/travis/makenew/deck-bespoke.js.svg)](https://travis-ci.org/makenew/deck-bespoke.js)
+[![David](https://img.shields.io/david/evansosenko/deck-doctoral-thesis.svg)](https://david-dm.org/evansosenko/deck-doctoral-thesis)
+[![David](https://img.shields.io/david/dev/evansosenko/deck-doctoral-thesis.svg)](https://david-dm.org/evansosenko/deck-doctoral-thesis#info=devDependencies)
+[![Travis](https://img.shields.io/travis/evansosenko/deck-doctoral-thesis.svg)](https://travis-ci.org/evansosenko/deck-doctoral-thesis)
 
-[![wercker status](https://app.wercker.com/status/6ada0cbe47dbb3268f982e7a44c25e9f/m "wercker status")](https://app.wercker.com/project/bykey/6ada0cbe47dbb3268f982e7a44c25e9f)
+> Built from [makenew/deck-bespoke.js](https://github.com/makenew/deck-bespoke.js).
+
+[![wercker status](https://app.wercker.com/status/6c9d5c4e1baa5e9460380c486f641ed5/m "wercker status")](https://app.wercker.com/project/bykey/6c9d5c4e1baa5e9460380c486f641ed5)
 
 ## Description
 
-Bootstrap a new [Bespoke.js] deck in less than a minute.
-
-Check out the **[live demo]** and its **[source code]**!
-
-**[Create your new deck now!](#bootstrapping-a-new-project)**
-
-[Bespoke.js]: http://markdalgleish.com/projects/bespoke.js/
-[live demo]: https://makenew.github.io/deck-bespoke.js/
-[source code]: https://github.com/makenew/deck-bespoke.js/tree/demo
-
-### Quick Usage Notes
-
-After the [initial bootstrapping steps](#bootstrapping-a-new-project),
-jump down to [Quickstart](#quickstart) and beyond to get up and running.
-
-The only file you are required to edit is where you
-add your slides: `app/partials/slides.static.hbs`.
-Try adding a few `<section>` elements and watch
-your slides magically appear!
-This is a Handlebars template which supports
-YAML front matter and partials.
-
-Add images or other assets anywhere under `app/assets`
-and refer to them with, e.g., if you have `app/assets/images/kitty.png`,
-write `src="DIGEST(/images/kitten.png)"`.
-
-This skeleton only comes with one plugins and one theme:
-[bespoke-keys] and [bespoke-theme-cube].
-Install more with `npm install --save`
-(or uninstall existing ones with `npm uninstall --save`),
-then load them in `app/modules/deck.js`.
-
-Since most decks are hosted as part of a larger website,
-the following typical boilerplate files are not Included:
-`404.html`, `crossdomain.xml`, and `robots.txt`.
-
-[bespoke-keys]: https://github.com/bespokejs/bespoke-keys
-[bespoke-theme-cube]: https://github.com/bespokejs/bespoke-theme-cube
-
-### Features
-
-- Develop and build with [Brunch]: the ultra-fast HTML5 build tool.
-- Core HTML5 layout based on [HTML5 Boilerplate].
-- Modular static templating with [html-brunch-static]
-  [Handlebars], and [Yaml Front Matter].
-- Extensive intelligent meta tag support.
-- Write modern JavaScript with [Babel] and the [ES2015 preset].
-- Write styles with [Sass] and [Autoprefixer].
-- Production assets optimized with [UglifyJS] and [cssnano].
-- Frontend and development dependency management with [npm].
-- Automatic browser reloading with [auto-reload-brunch].
-- Cache-optimized assets with [digest-brunch].
-- Linting with the [JavaScript Standard Style], [Sass Lint], and [HTMLHint].
-- Automatically lint on changes with [gulp].
-- Normalized element styles with [Normalize.css].
-- Favicons with [Favic-o-matic].
-- The internet is for humans with [humans.txt].
-- [Travis CI] and [wercker] ready.
-- Deploy to [GitHub pages] locally or from [wrecker]
-  (or [add Travis CI deployment][travis-deploy]).
-- Optimized and tested deployment build with [HTMLMinifier] and [imagemin].
-- [Keep a CHANGELOG].
-- Consistent coding with [EditorConfig].
-- Includes a free culture [Creative Commons] license.
-- Badges from [Shields.io].
-
-[auto-reload-brunch]: https://github.com/brunch/auto-reload-brunch
-[Autoprefixer]: https://github.com/postcss/autoprefixer
-[Babel]: https://babeljs.io/
-[Brunch]: http://brunch.io/
-[cssnano]: http://cssnano.co/
-[Creative Commons]: https://creativecommons.org/
-[digest-brunch]: https://github.com/mutewinter/digest-brunch
-[EditorConfig]: http://editorconfig.org/
-[ES2015 preset]: https://babeljs.io/docs/plugins/preset-es2015/
-[Favic-o-matic]: http://www.favicomatic.com/
-[GitHub pages]: https://pages.github.com/
-[gulp]: http://gulpjs.com/
-[Handlebars]: http://handlebarsjs.com/
-[html-brunch-static]: https://github.com/bmatcuk/html-brunch-static
-[HTML5 Boilerplate]: https://html5boilerplate.com/
-[HTMLHint]: https://github.com/yaniswang/HTMLHint
-[HTMLMinifier]: https://github.com/kangax/html-minifier
-[humans.txt]: http://humanstxt.org/
-[imagemin]: https://github.com/imagemin/imagemin
-[JavaScript Standard Style]: http://standardjs.com/
-[Keep a CHANGELOG]: http://keepachangelog.com/
-[npm]: https://www.npmjs.com/
-[Normalize.css]: https://necolas.github.io/normalize.css/
-[Sass]: http://sass-lang.com/
-[Sass Lint]: https://github.com/sasstools/sass-lint
-[Shields.io]: http://shields.io/
-[Travis CI]: https://travis-ci.org/
-[travis-deploy]: https://gist.github.com/razor-x/a76da4b96928986776a966124a078e1d
-[UglifyJS]: https://github.com/mishoo/UglifyJS2
-[wercker]: http://wercker.com/
-[Yaml Front Matter]: https://github.com/dworthen/js-yaml-front-matter
-
-### Bootstrapping a New Project
-
-1. Clone the master branch of this repository with
-
-   ```
-   $ git clone --single-branch https://github.com/makenew/deck-bespoke.js.git new-deck-bespoke.js
-   $ cd new-deck-bespoke.js
-   ```
-
-   Optionally, reset to the latest [release][Releases] with
-
-   ```
-   $ git reset --hard deck-bespoke.js-v1.5.2
-   ```
-
-2. Run
-
-   ```
-   $ ./makenew.sh
-   ```
-
-   and follow the prompts.
-   This will replace the boilerplate, delete itself,
-   and stage changes for commit.
-   This script assumes the project repository will be hosted on GitHub.
-   For an alternative location, you must update the URLs manually.
-
-3. Fill in the README Description section.
-
-4. If [choosing a license][Choose a license] other than the one provided:
-   update `LICENSE.txt`, the README License section, license badge,
-   and `package.json` with your chosen license.
-
-5. Add your own favicons from [Favic-o-matic]
-   to `app/assets/favicon` and overwrite `app/assets/favicon.ico`.
-   You can make a quick [Font Awesome] favicon at [FA2PNG].
-
-6. Further customize the meta data in `app/index.static.hbs`.
-
-7. [Lock your dependencies](#updating-requirements)
-   with `npm-shrinkwrap.json`.
-   Optionally, lock the Node.js version with `.nvmrc`
-   and in `wercker.yml`.
-
-8. Configure [deployment](#deploy-to-github-pages)
-   to GitHub pages from wercker and update the wercker badge.
-
-[Choose a license]: http://choosealicense.com/
-[FA2PNG]: http://fa2png.io/
-[Font Awesome]: https://fortawesome.github.io/Font-Awesome/
-[Releases]: https://github.com/makenew/deck-bespoke.js/releases
-[The Unlicense]: http://unlicense.org/UNLICENSE
-
-### Updating
-
-If you want to pull in future updates from this skeleton,
-you can fetch and merge in changes from this repository.
-
-If this repository is already set as `origin`,
-rename it to `upstream` with
-
-```
-$ git remote rename origin upstream
-```
-
-and then configure your `origin` branch as normal.
-
-Otherwise, add this as a new remote with
-
-```
-$ git remote add upstream https://github.com/makenew/deck-bespoke.js.git
-```
-
-You can then fetch and merge changes with
-
-```
-$ git fetch upstream
-$ git merge upstream/master
-```
-
-#### Changelog
-
-Note that `CHANGELOG.md` is just a template for this skeleton.
-The actual changes for this project are documented in the commit history
-and summarized under [Releases].
+Spin and valley physics in two dimensional systems:
+Graphene and superconducting transition metal dichalcogenides.
 
 ## Quickstart
 
 ```
-$ git clone https://github.com/makenew/deck-bespoke.js.git
-$ cd deck-bespoke.js
+$ git clone https://github.com/evansosenko/deck-doctoral-thesis.git
+$ cd deck-doctoral-thesis
 $ npm install
 $ npm start
 ```
@@ -208,14 +28,14 @@ $ npm start
 
 ### Source Code
 
-The [makenew-deck-bespoke.js source] is hosted on GitHub.
+The [deck-doctoral-thesis source] is hosted on GitHub.
 Clone the project with
 
 ```
-$ git clone https://github.com/makenew/deck-bespoke.js.git
+$ git clone https://github.com/evansosenko/deck-doctoral-thesis.git
 ```
 
-[makenew-deck-bespoke.js source]: https://github.com/makenew/deck-bespoke.js
+[deck-doctoral-thesis source]: https://github.com/evansosenko/deck-doctoral-thesis
 
 ### Requirements
 
@@ -372,7 +192,7 @@ Please submit and comment on bug reports and feature requests.
 
 To submit a patch:
 
-1. Fork it (https://github.com/makenew/deck-bespoke.js/fork).
+1. Fork it (https://github.com/evansosenko/deck-doctoral-thesis/fork).
 2. Create your feature branch (`git checkout -b my-new-feature`).
 3. Make changes.
 4. Commit your changes (`git commit -am 'Add some feature'`).
@@ -381,16 +201,12 @@ To submit a patch:
 
 ## License
 
-This software can be used freely, see [The Unlicense].
-The copyright text appearing below and elsewhere in this repository
-is for demonstration purposes only and does not apply to this software.
-
 <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">
   <img alt="Creative Commons License"
        src= "https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
        style="border-width:0"></a><br>
 <span>deck-bespoke.js</span> by
-<a href="https://evansosenko.com/" rel="cc:attributionURL">
+<a href="https://evansosenko.com" rel="cc:attributionURL">
   Evan Sosenko
 </a>
 is licensed under a
@@ -398,9 +214,9 @@ is licensed under a
   Creative Commons Attribution-ShareAlike 4.0 International License
 </a>.<br>
 Based on a work at
-<a href="https://github.com/makenew/deck-bespoke.js"
+<a href="https://github.com/evansosenko/deck-doctoral-thesis"
    rel="dct:source">
-   https://github.com/makenew/deck-bespoke.js
+   https://github.com/evansosenko/deck-doctoral-thesis
 </a>.
 
 Some content may be licensed under other terms where noted.
