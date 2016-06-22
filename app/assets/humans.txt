@@ -10,3 +10,4 @@ Source: https://github.com/evansosenko/deck-doctoral-thesis
 https://github.com/bespokejs/bespoke
 https://github.com/Nytramr/bespoke-theme-simple-slide
 https://necolas.github.io/normalize.css/
+https://github.com/typekit/webfontloader
