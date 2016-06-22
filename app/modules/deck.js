@@ -1,10 +1,8 @@
 import bespoke from 'bespoke'
 import keys from 'bespoke-keys'
-import cube from 'bespoke-theme-cube'
 
 const plugins = [
-  keys(),
-  cube()
+  keys()
 ]
 
 export default (element) => {

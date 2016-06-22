@@ -37,7 +37,6 @@
   "dependencies": {
     "bespoke": "^1.1.0",
     "bespoke-keys": "^1.1.0",
-    "bespoke-theme-cube": "^2.0.1",
     "normalize.css": "^4.0.0"
   },
   "devDependencies": {

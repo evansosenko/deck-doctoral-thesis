@@ -8,7 +8,6 @@ Source: https://github.com/evansosenko/deck-doctoral-thesis
 
 /* LIBRARIES */
 https://github.com/bespokejs/bespoke
-https://github.com/bespokejs/bespoke-theme-cube
 https://khan.github.io/KaTeX/
 https://necolas.github.io/normalize.css/
 https://github.com/typekit/webfontloader
