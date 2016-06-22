@@ -8,6 +8,9 @@ Source: https://github.com/evansosenko/deck-doctoral-thesis
 
 /* LIBRARIES */
 https://github.com/bespokejs/bespoke
+https://github.com/bespokejs/bespoke-classes
+https://github.com/bespokejs/bespoke-hash
+https://github.com/bespokejs/bespoke-touch
 https://khan.github.io/KaTeX/
 https://necolas.github.io/normalize.css/
 https://github.com/typekit/webfontloader
