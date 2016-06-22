@@ -2555,6 +2555,11 @@
       "from": "in-publish@>=2.0.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/in-publish/-/in-publish-2.0.0.tgz"
     },
+    "include-media": {
+      "version": "1.4.6",
+      "from": "include-media@latest",
+      "resolved": "https://registry.npmjs.org/include-media/-/include-media-1.4.6.tgz"
+    },
     "indent-string": {
       "version": "2.1.0",
       "from": "indent-string@>=2.1.0 <3.0.0",
