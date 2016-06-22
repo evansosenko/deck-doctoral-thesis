@@ -1,0 +1,11 @@
+rules:
+  mixins-before-declarations:
+    - 1
+    -
+      exclude:
+        'media'
+
+  property-sort-order:
+    - 1
+    -
+      order: smacss
