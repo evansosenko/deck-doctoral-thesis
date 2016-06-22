@@ -18,12 +18,15 @@ baseurl: deck-doctoral-thesis
     <meta name="mobile-web-app-capable" content="yes">
     <link type="text/plain" rel="author" href="{{baseurl}}/humans.txt">
     <link rel="stylesheet" href="DIGEST(/app.css)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
     {{> favicon}}
   </head>
   <body>
     <main>
       {{content}}
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js" defer></script>
     <script src="DIGEST(/app.js)" defer></script>
   </body>
 </html>

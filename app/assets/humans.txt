@@ -9,5 +9,6 @@ Source: https://github.com/evansosenko/deck-doctoral-thesis
 /* LIBRARIES */
 https://github.com/bespokejs/bespoke
 https://github.com/Nytramr/bespoke-theme-simple-slide
+https://khan.github.io/KaTeX/
 https://necolas.github.io/normalize.css/
 https://github.com/typekit/webfontloader
