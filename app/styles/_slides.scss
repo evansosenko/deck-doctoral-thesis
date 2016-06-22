@@ -1,0 +1,20 @@
+section {
+  background-color: color(slide-bg);
+  color: color(slide-text);
+
+  h2 {
+    color: color(heading-text);
+  }
+
+  strong {
+    color: color(bold-text);
+  }
+}
+
+a {
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+}
