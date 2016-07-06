@@ -1,3 +1,5 @@
+const Handlebars = require('handlebars')
+
 exports.config = {
   npm: {
     styles: {
@@ -57,6 +59,15 @@ exports.config = {
           handlebars: {
             enableProcessor: true,
             helpers: {
+              cite (context, block) {
+                const ref = context[block.hash.id]
+                const authors = Handlebars.Utils.escapeExpression(ref.authors)
+                const url = Handlebars.Utils.escapeExpression(ref.url)
+                const paper = Handlebars.Utils.escapeExpression(ref.paper)
+                return new Handlebars.SafeString(
+                  `<cite>${authors}, <a href="${url}">${paper}</a>.</cite>`
+                )
+              },
               join (context, block) {
                 return context.join(block.hash.delimiter)
               },
