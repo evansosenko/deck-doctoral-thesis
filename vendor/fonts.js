@@ -3,8 +3,8 @@
 window.WebFontConfig = {
   google: {
     families: [
-      'Merriweather:300:latin',
-      'Lora'
+      'Lato::latin',
+      'Source+Sans+Pro:400,300,600,700:latin'
     ]
   }
 };

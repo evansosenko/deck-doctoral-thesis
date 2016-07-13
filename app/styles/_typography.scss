@@ -1,8 +1,7 @@
 $font-family-heading: (
-  Lato,
-  'Noto Sans',
-  'Open Sans',
   'Source Sans Pro',
+  'Open Sans',
+  'Noto Sans',
   'Helvetica Neue',
   Helvetica,
   Roboto,
@@ -11,12 +10,12 @@ $font-family-heading: (
 );
 
 $font-family-author: (
-  Merriweather,
+  Lato,
   serif
 );
 
 @mixin slide-font-size($size) {
-  @include media('>=xga') {
+  @include media('>=fhd') {
     font-size: $size;
   }
 }
@@ -38,7 +37,7 @@ p {
 h1 {
   @include slide-font-size(4rem);
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 4px;
   text-align: center;
 }
@@ -64,7 +63,7 @@ cite {
 }
 
 .subtitle {
-  @include slide-font-size(1.5rem);
+  @include slide-font-size(3.5rem);
 }
 
 .authors {
