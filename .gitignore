@@ -5,6 +5,9 @@
 # For more details, visit the project page:
 # https://github.com/github/gitignore
 
+# Spell file
+*.add.spl
+
 # Deploy directory
 .deploy
 
