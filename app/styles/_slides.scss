@@ -18,3 +18,63 @@ a {
     color: inherit;
   }
 }
+
+.marks {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  img {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+}
+
+.slide-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: color(title-bg);
+  color: color(title-text);
+
+  .title {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .title-main {
+    display: block;
+  }
+
+  .title-sub {
+    display: block;
+    font-variant: small-caps;
+  }
+
+  .subtitle {
+    order: -1;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .date {
+    display: block;
+    order: -1;
+  }
+
+  .authors {
+    flex: 1;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+
+    @include media('<xga') {
+      margin-top: 0;
+    }
+
+    @include media('>=xga') {
+      width: 100%;
+    }
+  }
+}
