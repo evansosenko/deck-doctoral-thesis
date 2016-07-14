@@ -17,3 +17,447 @@
          alt="{{text.ucr.name}}">
   </div>
 </header>
+
+<section class="slide-outline">
+  <h2>Spin lifetime</h2>
+  <div>
+    <h3>Outline</h3>
+    <ol>
+      <li>Motivation</li>
+      <li>Model and solution</li>
+      <li>Hanle curve fitting</li>
+      <li>Regimes and results</li>
+      <li>Related software</li>
+    </ol>
+  </div>
+  <div>
+    <h3>Motivation</h3>
+    <ol>
+      <li>
+        Theoretical lifetime predictions longer than measured values:
+        \( \text{ms} \) vs. \( \text{ps} \)
+      </li>
+      <li>Finite contact resistance mismatch: a potential candidate</li>
+      <li>Unified analytic solution for fitting data in all limits</li>
+    </ol>
+  </div>
+  <img src="DIGEST(/images/spin-lifetime/device.svg)" />
+  {{cite references id="PhysRevB.89.245436"}}
+</section>
+
+<section class="slide-geometry">
+  <h2>Device geometry</h2>
+  <div class="main">
+    <ul class="equation first">
+      <li>\( L \) : contact spacing</li>
+      <li>\( D \) : diffusion constant</li>
+      <li>\( \tau \) : spin lifetime</li>
+      <li>\( \lambda = \sqrt{D \tau} \)</li>
+      <li>\( \omega = g \mu_B B / \hbar \)</li>
+    </ul>
+    <div class="device">
+      <img class="spin-valve"
+      src="DIGEST(/images/spin-lifetime/tikz-nonlocal_spin_valve.png)" />
+
+    </div>
+    <ul class="equation last">
+      <li>
+        \( \mu_s = \frac{1}{2}
+           \left( \mu_{\uparrow} - \mu_{\downarrow} \right) \)
+      </li>
+      <li>
+        \( J_{\uparrow \downarrow}
+        = \sigma_{\uparrow \downarrow} \nabla \mu_{\uparrow \downarrow} \)
+      </li>
+      <li>
+        \( J_{\uparrow \downarrow}^C = \Sigma_{\uparrow \downarrow}
+        \left( \mu^N_{\uparrow \downarrow}
+        - \mu^F_{\uparrow \downarrow} \right)_c \)
+      </li>
+      <li>\( J = J_{\uparrow} + J_{\downarrow} \)</li>
+      <li>\( J_s = J_{\uparrow} - J_{\downarrow} \)</li>
+    </ul>
+  </div>
+  <div>
+    <p>$$D \nabla^2 \mu_s - \frac{\mu_s}{\tau} + \omega \times \mu_s = 0$$</p>
+    <p>$$V \propto \mu_s^N(x = L)$$</p>
+    <p>$$R_\text{NL} = V / I$$</p>
+  </div>
+  {{cite references id="ActaPhysicaSlovaca.57.4_5.565-907"}}
+  {{cite references id="PhysRevB.37.5312"}}
+  {{cite references id="PhysRevB.67.052409"}}
+  {{cite references id="PhysRevB.80.214427"}}
+</section>
+
+<section>
+  <h2>Motivation for solution</h2>
+  <h3>Existing results</h3>
+  <ul>
+    <li>All existing analytic expressions ignore contact resistance</li>
+    <li>Assume infinite resistance for convenience</li>
+    <li>Integral form widely used but difficult to fit</li>
+    <li>Only a numeric treatment of finite contact resistance</li>
+  </ul>
+
+  <p>$$R_{\text{NL}} \propto \text{Re} {\frac{e^{- \left( L / \lambda \right) \sqrt{1 + i \omega \tau}}}{2 \sqrt{1 + i \omega \tau}}}$$</p>
+  <p>$$R_{\text{NL}} \propto \int_0^{\infty} \frac{1}{\sqrt{4 \pi D t}}
+       \exp{\left[ - \frac{L^2}{4 D t} \right]} e^{-t / \tau} \cos{\omega t} \: dt$$</p>
+
+  <h3>Our approach</h3>
+  <ul>
+    <li>Finite contact resistance</li>
+    <li>Exact analytic expression</li>
+    <li>Matches previous approaches in appropriate limits</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Non-local resistance</h2>
+  <p>$$\Delta R_{\text{NL}} = 2 P^2 R_N \left\lvert f \right\rvert$$</p>
+
+  <ul class="equation">
+    <li>\( r = \frac{R_F + R_C}{R_{\text{SQ}}} W \)</li>
+    <li>\( R_{\text{SQ}} = W / \sigma^N \)</li>
+    <li>\( R_N = \frac{\lambda}{W L} \frac{1}{\sigma^N} \)</li>
+  </ul>
+
+  <p class="long-equation">
+    $$
+      f = \text{Re} \left\{ \left(
+            2 \left[ \sqrt{1 + i \omega \tau} + (\lambda / r) \right]
+            e^{\left( L / \lambda \right) \sqrt{1 + i \omega \tau}}
+            + (\lambda / r)^2 \frac{
+                \sinh{ \left[ \left( L / \lambda \right) \sqrt{1 + i \omega \tau} \right] }
+              }{\sqrt{1 + i \omega \tau}}
+          \right)^{-1} \right\} .
+    $$
+  </p>
+
+  <p>Only scales that appear in \( f \)</p>
+  <ul class="equation">
+    <li>\( L / \lambda \)</li>
+    <li>\( \lambda / r \)</li>
+    <li>\( \omega \tau \)</li>
+  </ul>
+
+  <p>{{cite references id="PhysRevB.89.245436"}}</p>
+</section>
+
+<section>
+  <h2>Fits</h2>
+  <div>
+    <h3>Tunneling contacts</h3>
+    <figure>
+      <img src="DIGEST(/images/spin-lifetime/fig_4a_difference.svg)" />
+      <figcaption>
+        Fit to parallel field data from Fig. 4a of W. Han, et al.
+      </figcaption>
+    </figure>
+
+    <ul class="equation">
+      {% include spin-lifetime-values.html id="b" %}
+    </ul>
+  </div>
+  <div>
+    <h3>Tunneling contacts</h3>
+    <figure>
+      <img src="DIGEST(/images/spin-lifetime/fig_4b_difference.svg)" />
+      <figcaption>
+        Fit to parallel field data from Fig. 4b of W. Han, et al.
+      </figcaption>
+    </figure>
+
+    <ul class="equation">
+      {% include spin-lifetime-values.html id="a" %}
+    </ul>
+  </div>
+
+  {{cite references id="PhysRevLett.105.167202"}}
+</section>
+
+
+<section>
+  <h2>Fits</h2>
+  <div>
+    <h3>Pinhole contacts</h3>
+    <figure>
+      <img src="DIGEST(/images/spin-lifetime/fig_4c_parallel.svg)" />
+      <figcaption>
+        Fit to parallel field data from Fig. 4c of W. Han, et al.
+      </figcaption>
+    </figure>
+
+    <ul class="equation">
+      {% include spin-lifetime-values.html id="c" %}
+    </ul>
+  </div>
+
+  <div>
+    <h3>Transparent contacts</h3>
+    <figure>
+      <img src="DIGEST(/images/spin-lifetime/fig_4d_difference.svg)" />
+      <figcaption>
+        Fit to parallel field data from Fig. 4d of W. Han, et al.
+      </figcaption>
+    </figure>
+
+    <ul class="equation">
+      {% include spin-lifetime-values.html id="d" %}
+    </ul>
+  </div>
+
+  <p>{{cite references id="PhysRevLett.105.167202"}}</p>
+</section>
+
+<section>
+  <h2>Regimes</h2>
+  <div>
+    <h3>Zero field</h3>
+    <p>$$\Delta R_{\text{NL}} = \left( P_{\Sigma}^L \right)^2 R_N e^{- L / \lambda}$$</p>
+  </div>
+
+  <div>
+    <h3>Tunneling contacts</h3>
+    <p>$$f^{\infty} = \text{Re} {\frac{e^{- \left( L / \lambda \right) \sqrt{1 + i \omega \tau}}}{2 \sqrt{1 + i \omega \tau}}}$$</p>
+  </div>
+
+  <h3>Fits independent of lifetime</h3>
+  <p>\( \lambda / r \gg \sqrt{\omega \tau} \gg 1 \)</p>
+  <p>Zeros determined by
+     $$L \sqrt{\frac{D}{2 \omega}} + \frac{\pi}{4} = \frac{n \pi}{2}$$</p>
+
+  <p>{{cite references id="PhysRevB.89.245436"}}</p>
+</section>
+
+<section>
+  <h2>Fits: \( \tau \) Independent Limit</h2>
+  <div>
+    <h3>Transparent contacts</h3>
+    <figure>
+      <img src="DIGEST(/images/spin-lifetime/fig_4d_difference_large_lifetime.svg)" />
+      <figcaption>
+        Fit to parallel field data from Fig. 4d of W. Han, et al.
+      </figcaption>
+    </figure>
+
+    <ul class="equation">
+      {% include spin-lifetime-values.html id="d_1" %}
+    </ul>
+  </div>
+
+  <div>
+    <h3>Transparent contacts</h3>
+    <figure>
+      <img src="DIGEST(/images/spin-lifetime/fig_4d_difference_larger_lifetime.svg" />
+      <figcaption>
+        Fit to parallel field data from Fig. 4d of W. Han, et al.
+      </figcaption>
+    </figure>
+
+    <ul class="equation">
+      {% include spin-lifetime-values.html id="d_2" %}
+    </ul>
+  </div>
+
+  <p>{{cite references id="PhysRevLett.105.167202"}}</p>
+</section>
+
+<section>
+  <h2>Software Package (Supplemental)</h2>
+
+  <h3>Data Fitting with SciPy</h3>
+  <h3>Fitalyzer</h3>
+</section>
+
+<section class="slide-overview">
+  <h2>Transition metal dichalcogenides</h2>
+  <ol>
+    <li>TMD overview and tight-biding, low-energy, two-valley model</li>
+    <li>Intrinsic and induced superconductivity</li>
+    <li>Intervalley and intravalley paring channels</li>
+    <li>Optical valley selection rules and Berry curvature</li>
+  </ol>
+  <figure class="crystal">
+    <img src="DIGEST(/images/tmdsc/tmd-crystal-top.png)"
+         alt="TMD crystal (top view)">
+    <img src="DIGEST(/images/tmdsc/tmd-crystal-side.png)"
+         alt="TMD crystal (side view)">
+  </figure>
+</section>
+
+<section>
+  <h2>TMD monolayers</h2>
+  <ul>
+    <li>Direct band gap semiconductors</li>
+    <li><strong>Break inversion symmetry</strong> ⇒ gapped out spectrum</li>
+    <li><strong>Two inequivalent valleys </strong> ⇒ new degree of freedom</li>
+    <li><strong>Strong spin-orbit coupling</strong> ⇒
+        large valance band spin-splitting</li>
+    <li>Opposite valley Berry curvature</li>
+    <li>Optical valley probe and valley Hall effect</li>
+    <li>Two state tight binding model:
+        \( d_{z^2} \), and \( d_{xy} \pm i d_{x^2 - y^2} \)</li>
+  </ul>
+  <p>
+    $$
+    H_0^{\tau s} \left( \mathbf{k} \right) =
+    a t \left(\tau k_x s_x + k_y s_y \right) \otimes I_2
+    $$$$
+    + \frac{\Delta}{2} s_z \otimes I_2
+    - \lambda \tau \left(\sigma_z - 1 \right) \otimes S_z
+    $$
+  </p>
+  {{cite references id="PhysRevLett.108.196802"}}
+</section>
+
+<section class="slide-energy">
+  <h2>Energy bands</h2>
+  <div class="bands">
+    <figure>
+      <img src="DIGEST(/images/tmdsc/energy-bands.svg)"
+           alt="Energy bands">
+    </figure>
+    <div class="values">
+      <ul>
+        <li>\( \Delta \)—band splitting</li>
+        <li>\( \lambda \)—spin splitting</li>
+        <li>\( \tau \)—valley index</li>
+        <li>\( s \)—spin index</li>
+      </ul>
+      <ul>
+        <li>\( a t = 3.15 \) Å eV</li>
+        <li>\( \Delta = 1.66 \) eV</li>
+        <li>\( 2 \lambda = 0.15 \) eV</li>
+        <li>\( \mu = -0.83 \) eV</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide-sources">
+  <h2>Superconducting sources</h2>
+  <div>
+    <h3>Substrate induced</h3>
+    <p>
+      $$
+      V =
+      - \sum_{\mathbf{k} \nu \tau} \Delta_{\nu}
+      {d^{\nu}_{\tau}}^{\dagger} \left( \mathbf{k} \right)
+      d^{\nu}_{-\tau} \left( \mathbf{k} \right)
+      $$
+    </p>
+  </div>
+  <div>
+    <h3>Intrinsic (density-density interaction)</h3>
+    <p>
+      $$
+      V =
+      \frac{1}{2} \sum_{\mathbf{R} \mathbf{R'}}
+      v_{\mathbf{R} \mathbf{R'}}
+      :n_{\mathbf{R}} n_{\mathbf{R'}}:
+      $$
+    </p>
+    <p>Assume even pairing interaction</p>
+  </div>
+</section>
+
+<section class="slide-channels">
+  <h2>Superconducting channels</h2>
+  <ul>
+    <li>Project into upper-valance bands (\( \tau = s \))</li>
+    <li>Mean field theory BCS-type solutions:
+        gap function \( \Delta_{\mathbf{k}} \)</li>
+    <li>\( m = 0 \) <strong>intervalley</strong> channel always dominates</li>
+    <li>Both classes give <strong>constant gap function</strong>
+        for dominant paring</li>
+  </ul>
+  <h3>Induced</h3>
+  <p>
+    $$
+    \Delta_{\mathbf{k}} =
+    \frac{1}{2} \left( \Delta_+ + \Delta_- \right)
+    - \frac{1}{2} \left( \Delta_+ - \Delta_- \right)
+    \cos{\theta_{\mathbf{k}}}
+    $$
+  </p>
+  <h3>Intrinsic</h3>
+  <p>
+    $$
+    \Delta_{\mathbf{k}} =
+    g_{\mathbf{k}}
+    v_0 \sum_{\mathbf{k}'}
+    g^*_{\mathbf{k}'}
+    \langle c_{-\mathbf{k}' \alpha'} c_{\mathbf{k}' \alpha} \rangle
+    $$
+  </p>
+</section>
+
+<section class="slide-optical">
+  <h2>Optical coupling</h2>
+  <div class="main">
+    <ul>
+      <li>Harmonic perturbation
+          ⇒ correlated phase's optical transition rates</li>
+      <li>
+        \( \mathbf{A} / |\mathbf{A}| =
+        \mathbf{\epsilon} e^{i \omega t}
+        + \mathbf{\epsilon}^* e^{-i \omega t} \),
+        \( \mathbf{k} \rightarrow \mathbf{k} + e \mathbf{A} \)
+      </li>
+      <li>Valley selection <strong>remains coupled</strong>
+          to circularly polarized light</li>
+    </ul>
+    <figure>
+      <img src="DIGEST(/images/tmdsc/optical-transitions.svg)"
+      alt="Optical transition rate">
+    </figure>
+  </div>
+</section>
+
+<section class="slide-curvature">
+  <h2>Berry curvature</h2>
+  <div class="main">
+    <ul>
+      <li>BCS ground state has zero net curvature</li>
+      <li>Optical pair-breaking
+          ⇒ selectively excite carriers in single valley</li>
+      <li>Berry curvature retains relative sign relations</li>
+      <li>Anomalous Hall velocity
+          \( \mathbf{v} = - \dot{\mathbf{k}}
+          \times \mathbf{\Omega} \left( \mathbf{k} \right) \)</li>
+    </ul>
+    <figure>
+      <img src="DIGEST(/images/tmdsc/bcs-pairs.svg)"
+      alt="Optical transition rate">
+    </figure>
+  </div>
+</section>
+
+<footer class="slide-end">
+  <h2>Next steps</h2>
+  <div class="main">
+    <ul class="next-steps">
+      <li>Compute superconducting current</li>
+      <li>Corresponding Hall conductivity</li>
+      <li>Extend to odd parity couplings</li>
+    </ul>
+    <div class="related">
+      <h3>This session @ {{text.related_talk.time}}</h3>
+      <p>
+        <a href="{{text.related_talk.url}}">{{text.related_talk.name}}</a>
+      </p>
+    </div>
+    <h3>Resources</h3>
+    <ul>
+      <li>{{text.link.name}} @ {{text.link.url}}</li>
+      <li><a href="{{text.eprint.url}}">{{text.eprint.name}}</a></li>
+      <li><a href="{{text.author.url}}">{{text.author.site}}</a></li>
+    </ul>
+  </div>
+  <div class="marks">
+    <img src="DIGEST(/images/tmd-crystal-top.png)"
+         alt="TMD crystal">
+    <img src="DIGEST(/images/ucr-logo-white.svg)"
+         alt="{{text.ucr.name}}">
+  </div>
+</footer>
