@@ -148,3 +148,28 @@ a {
     }
   }
 }
+
+.slide-geometry {
+  li {
+    list-style: none;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .spin-valve {
+    width: 100%;
+  }
+}
