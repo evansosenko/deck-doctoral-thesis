@@ -133,3 +133,32 @@
     <li>Matches previous approaches in appropriate limits</li>
   </ul>
 </section>
+
+<section class="slides-resistance">
+  <h2>Non-local resistance</h2>
+  <p>$$\Delta R_{\text{NL}} = 2 P^2 R_N \left\lvert f \right\rvert$$</p>
+  <ul class="equations">
+    <li>\( r = \frac{R_F + R_C}{R_{\text{SQ}}} W \)</li>
+    <li>\( R_{\text{SQ}} = W / \sigma^N \)</li>
+    <li>\( R_N = \frac{\lambda}{W L} \frac{1}{\sigma^N} \)</li>
+  </ul>
+  <p>
+    $$
+    f
+    = \text{Re} \left\{ \left(
+      2 \left[ \sqrt{1 + i \omega \tau} + (\lambda / r) \right]
+      e^{\left( L / \lambda \right) \sqrt{1 + i \omega \tau}}
+    + (\lambda / r)^2 \frac{
+      \sinh{\left[ \left( L / \lambda \right) \sqrt{1 + i \omega \tau} \right]}}
+      {\sqrt{1 + i \omega \tau}}
+      \right)^{-1} \right\}
+    $$
+  </p>
+  <p>Only scales that appear in \( f \)</p>
+  <ul class="equations">
+    <li>\( L / \lambda \)</li>
+    <li>\( \lambda / r \)</li>
+    <li>\( \omega \tau \)</li>
+  </ul>
+  {{cite references id="PhysRevB.89.245436"}}
+</section>
