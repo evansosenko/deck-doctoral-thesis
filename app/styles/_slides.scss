@@ -10,6 +10,14 @@ section {
   strong {
     color: color(bold-text);
   }
+
+  .equations {
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
 }
 
 a {
