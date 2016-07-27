@@ -71,7 +71,7 @@ exports.config = {
                     </li>`
                 })
 
-                return new Handlebars.SafeString(`<ul>${valstrs}</ul>`)
+                return new Handlebars.SafeString(valstrs)
               },
               cite (context, block) {
                 const ref = context[block.hash.id]
