@@ -134,13 +134,12 @@ a {
 .slide-background {
   .background-2d {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
+  }
 
-    > div {
-      align-self: center;
-    }
+  .background-2d-bullets {
+    align-self: center;
   }
 
   .background-spin {
@@ -188,4 +187,25 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.slides-fits {
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  ul {
+    width: 25%;
+    margin: auto;
+    padding: 0;
+  }
+
+  figcaption {
+    text-align: center;
+  }
 }
