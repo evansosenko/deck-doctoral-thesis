@@ -79,3 +79,31 @@ a {
     }
   }
 }
+
+.slide-background {
+  .background-2d {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    > div {
+      align-self: center;
+    }
+  }
+
+  .background-spin {
+    margin-top: 1rem;
+  }
+
+  .fig-graphene {
+    width: 44%;
+
+    img {
+      width: 650px;
+      border: 5px solid color(img-border);
+    }
+  }
+}
