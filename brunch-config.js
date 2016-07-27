@@ -59,6 +59,20 @@ exports.config = {
           handlebars: {
             enableProcessor: true,
             helpers: {
+              fitvals (context, block) {
+                const vals = context.values[block.hash.fit]
+                const vars = context.vars
+                const units = context.units
+
+                let valstrs = ''
+                Object.keys(vals).forEach((k) => {
+                  valstrs += `<li>
+                    \\( ${vars[k]} = ${vals[k]} \\: ${units[k]} \\)
+                    </li>`
+                })
+
+                return new Handlebars.SafeString(`<ul>${valstrs}</ul>`)
+              },
               cite (context, block) {
                 const ref = context[block.hash.id]
                 const authors = Handlebars.Utils.escapeExpression(ref.authors)
