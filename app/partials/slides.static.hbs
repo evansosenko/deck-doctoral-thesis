@@ -60,3 +60,46 @@
   </div>
   </div>
 </section>
+
+<section class="slide-geometry">
+  <h2>Device geometry</h2>
+  <div class="main">
+    <ul class="equation">
+      <li>\( L \) : contact spacing</li>
+      <li>\( D \) : diffusion constant</li>
+      <li>\( \tau \) : spin lifetime</li>
+      <li>\( \lambda = \sqrt{D \tau} \)</li>
+      <li>\( \omega = g \mu_B B / \hbar \)</li>
+    </ul>
+    <figure class="device">
+      <img class="spin-valve"
+      src="DIGEST(/images/spin-lifetime/tikz-nonlocal_spin_valve.png)" />
+    </figure>
+    <ul class="equation">
+      <li>
+        \( \mu_s = \frac{1}{2}
+        \left( \mu_{\uparrow} - \mu_{\downarrow} \right) \)
+      </li>
+      <li>
+        \( J_{\uparrow \downarrow}
+        = \sigma_{\uparrow \downarrow} \nabla \mu_{\uparrow \downarrow} \)
+      </li>
+      <li>
+        \( J_{\uparrow \downarrow}^C = \Sigma_{\uparrow \downarrow}
+        \left( \mu^N_{\uparrow \downarrow}
+        - \mu^F_{\uparrow \downarrow} \right)_c \)
+      </li>
+      <li>\( J = J_{\uparrow} + J_{\downarrow} \)</li>
+      <li>\( J_s = J_{\uparrow} - J_{\downarrow} \)</li>
+    </ul>
+  </div>
+  <div>
+    <p>$$D \nabla^2 \mu_s - \frac{\mu_s}{\tau} + \omega \times \mu_s = 0$$</p>
+    <p>$$V \propto \mu_s^N(x = L)$$</p>
+    <p>$$R_\text{NL} = V / I$$</p>
+  </div>
+  {{cite references id="ActaPhysicaSlovaca.57.4_5.565-907"}}
+  {{cite references id="PhysRevB.37.5312"}}
+  {{cite references id="PhysRevB.67.052409"}}
+  {{cite references id="PhysRevB.80.214427"}}
+</section>
