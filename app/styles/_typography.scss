@@ -58,7 +58,12 @@ ol {
 }
 
 cite {
-  @include slide-font-size(1.5rem);
+  @include slide-font-size(1.3rem);
+  font-size: .8rem;
+}
+
+figcaption {
+  @include slide-font-size(1.1rem);
   font-size: .8rem;
 }
 
