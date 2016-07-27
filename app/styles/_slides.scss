@@ -80,14 +80,55 @@ a {
   }
 }
 
+.slide-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: color(title-bg);
+  color: color(title-text);
+
+  ul {
+    margin-bottom: 1.5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  .related {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-style: dotted;
+    border-right-style: none;
+    border-bottom-style: dotted;
+    border-left-style: none;
+    border-color: color(warm);
+  }
+
+  h2,
+  .main {
+    text-align: center;
+  }
+
+  .main {
+    flex: 1;
+  }
+
+  img {
+    width: 20%;
+  }
+}
+
 .slide-background {
   .background-2d {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
 
     > div {
       align-self: center;
