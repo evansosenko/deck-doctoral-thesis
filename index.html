@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Physics Doctoral Thesis Defense</title>
-<meta property="og:title" content="Physics Doctoral Thesis Defense">
+<title>Evan Sosenko&#x27;s Doctoral Thesis Defense</title>
+<meta property="og:title" content="Evan Sosenko&#x27;s Doctoral Thesis Defense">
 <meta name="description" content="Spin and valley physics in two dimensional systems: Graphene and superconducting transition metal dichalcogenides.">
 <meta property="og:description" content="Spin and valley physics in two dimensional systems: Graphene and superconducting transition metal dichalcogenides.">
 <link rel="canonical" href="https://evansosenko.comdeck-doctoral-thesis/">
 <meta property="og:url" content="https://evansosenko.comdeck-doctoral-thesis/">
-<meta property="og:updated_time" content="2016-07-07T23:09:50.015Z">
+<meta property="og:updated_time" content="2016-07-28T22:40:48.637Z">
 <meta property="og:site_name" content="deck-doctoral-thesis">
 <meta name="application-name" content="deck-doctoral-thesis">
 <meta property="og:locale" content="en_US">
@@ -22,7 +22,7 @@
 <meta name="msapplication-config" content="none">
 <meta name="mobile-web-app-capable" content="yes">
 <link type="text/plain" rel="author" href="deck-doctoral-thesis/humans.txt">
-<link rel="stylesheet" href="deck-doctoral-thesis/app-9d4c4826.css">
+<link rel="stylesheet" href="deck-doctoral-thesis/app-85dd36b8.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
 <link rel="icon" type="image/png" href="deck-doctoral-thesis/favicon/favicon-196x196-a91381e1.png" sizes="196x196">
 <link rel="icon" type="image/png" href="deck-doctoral-thesis/favicon/favicon-96x96-c83f6475.png" sizes="96x96">
@@ -47,10 +47,364 @@
 <body>
 <main>
 <article id="deck">
+<header class="slide-title">
+<h1 class="title">
+<span class="title-main">Spin and Valley Physics in Two Dimensional Systems</span>
+<span class="title-sub">Graphene and Superconducting Transition Metal Dichalcogenides</span>
+</h1>
+<h2 class="subtitle">Doctoral Thesis Defense</h2>
+<date class="date"></date>
+<ul class="authors">
+<li><a href="">Evan Sosenko</a></li>
+<li>with</li>
+<li><a href="">Vivek Aji</a></li>
+</ul>
+<div class="marks">
+<img src="deck-doctoral-thesis/images/tmdsc/tmd-crystal-top-4a0352cd.png" alt="TMD crystal">
+<img src="deck-doctoral-thesis/images/ucr-logo-white-a7a5b4f1.svg" alt="">
+</div>
+</header>
+<section class="slide-background">
+<h2>Background</h2>
+<div class="background-2d">
+<figure class="fig-graphene">
+<img src="deck-doctoral-thesis/images/graphene.jpg" alt="">
+<figcaption>
+By AlexanderAlUS (Own work) [<a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0
+</a>
+or
+<a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>],
+<a href="https://commons.wikimedia.org/wiki/File%3AGraphen.jpg">
+via Wikimedia Commons
+</a>
+</figcaption>
+</figure>
+<div class="background-2d-bullets">
+<h3>2D Materials promise novel application</h3>
+<ul>
+<li>Graphene discovered 2004</li>
+<li>Unique properties from the bulk</li>
+<li>Hexagonal lattice, high electron mobility</li>
+<li>Relativistic low-energy model: Dirac cones, linear dispersion</li>
+<li>Monolayer TMDs: hexagonal lattice</li>
+<li>Gapped with strong spin-orbit coupling</li>
+<li>Strong, flexible &amp; transparent</li>
+<li>Both excellent candidates for spintronic devices</li>
+</ul>
+</div>
+</div>
+<div class="background-spin">
+<h3>Spintronics</h3>
+<ul>
+<li>Nobel Prize for GMR in 2007</li>
+<li>A future with devices built on spin-current</li>
+<li>Smaller and lower power</li>
+<li>
+<strong>Graphene?</strong>
+Predicted excellent conductor for spin-current
+</li>
+<li>
+<strong>TMDs?</strong>
+No spin degeneracy and spin couples to light polarization
+</li>
+</ul>
+</div>
+</section>
+<section class="slide-spin-overview">
+<h2>Overview for Part I</h2>
+<div class="main">
+<div>
+<h3>Spin lifetime</h3>
+<ul>
+<li>Spin signals degrade via internal scattering</li>
+<li>Spin lifetime measures how quickly this happens</li>
+<li>Critical to find materials with long spin lifetimes</li>
+</ul>
+</div>
+<div>
+<h3>Motivation</h3>
+<ol>
+<li>
+Theoretical predictions longer than measured: \( \text{ms} \) vs. \( \text{ps} \)
+</li>
+<li>Finite contact resistance mismatch: a potential candidate</li>
+<li>Unified analytic solution for fitting data in all limits</li>
+</ol>
+</div>
+<figure>
+<img src="deck-doctoral-thesis/images/spin-lifetime/device-8dcbd621.svg">
+</figure>
+<div class="outline">
+<h3>Outline</h3>
+<ol>
+<li>Model and solution</li>
+<li>Hanle curve fitting</li>
+<li>Regimes and results</li>
+</ol>
+</div>
+</div>
+<cite>E. Sosenko, H. Wei, and V. Aji, <a href="https://dx.doi.org/10.1103/PhysRevB.89.245436">Phys. Rev. B 89, 245436 (2014)</a>.</cite>
+</section>
+<section class="slide-geometry">
+<h2>Device geometry</h2>
+<div class="main">
+<ul class="equations">
+<li>\( L \) : contact spacing</li>
+<li>\( D \) : diffusion constant</li>
+<li>\( \tau \) : spin lifetime</li>
+<li>\( \lambda = \sqrt{D \tau} \)</li>
+<li>\( \omega = g \mu_B B / \hbar \)</li>
+</ul>
+<figure class="device">
+<img class="spin-valve" src="deck-doctoral-thesis/images/spin-lifetime/tikz-nonlocal_spin_valve-668083ef.png">
+</figure>
+<ul class="equations">
+<li>
+\( \mu_s = \frac{1}{2} \left( \mu_{\uparrow} - \mu_{\downarrow} \right) \)
+</li>
+<li>
+\( J_{\uparrow \downarrow} = \sigma_{\uparrow \downarrow} \nabla \mu_{\uparrow \downarrow} \)
+</li>
+<li>
+\( J_{\uparrow \downarrow}^C = \Sigma_{\uparrow \downarrow} \left( \mu^N_{\uparrow \downarrow} - \mu^F_{\uparrow \downarrow} \right)_c \)
+</li>
+<li>\( J = J_{\uparrow} + J_{\downarrow} \)</li>
+<li>\( J_s = J_{\uparrow} - J_{\downarrow} \)</li>
+</ul>
+</div>
+<div>
+<p>$$D \nabla^2 \mu_s - \frac{\mu_s}{\tau} + \omega \times \mu_s = 0$$</p>
+<p>$$V \propto \mu_s^N(x = L)$$</p>
+<p>$$R_\text{NL} = V / I$$</p>
+</div>
+<cite>J. Fabian, A. Matos-Abiague, C. Ertler, P. Stano, and I. Žutić, <a href="http://www.physics.sk/aps/pub.php?y&#x3D;2007&amp;pub&#x3D;aps-07-04">Acta Physica Slovaca 57, 565 (2007)</a>.</cite>
+<cite>M. Johnson and R. H. Silsbee, <a href="https://dx.doi.org/10.1103/PhysRevB.37.5312">Phys. Rev. B 37, 5312 (1988)</a>.</cite>
+<cite>S. Takahashi and S. Maekawa, <a href="https://dx.doi.org/10.1103/PhysRevB.67.052409">Phys. Rev. B 67, 052409 (2003)</a>.</cite>
+<cite>M. Popinciuc, C. Józsa, P. J. Zomer, N. Tombros, A. Veligura, H. T. Jonkman, and B. J. van Wees, <a href="https://dx.doi.org/10.1103/PhysRevB.80.214427">Phys. Rev. B 80, 214427 (2009)</a>.</cite>
+</section>
+<section class="slide-spin-motivation">
+<h2>Motivation for solution</h2>
+<h3>Existing results</h3>
+<ul>
+<li>All existing analytic expressions ignore contact resistance</li>
+<li>Assume infinite resistance for convenience</li>
+<li>Integral form widely used but difficult to fit</li>
+<li>Only a numeric treatment of finite contact resistance</li>
+</ul>
+<p>
+$$ R_{\text{NL}} \propto \text{Re} {\frac{e^{- \left( L / \lambda \right) \sqrt{1 + i \omega \tau}}} {2 \sqrt{1 + i \omega \tau}}} $$
+</p>
+<p>
+$$ R_{\text{NL}} \propto \int_0^{\infty} \frac{1}{\sqrt{4 \pi D t}} \exp{\left[ - \frac{L^2}{4 D t} \right]} e^{-t / \tau} \cos{\omega t} \: dt $$
+</p>
+<h3>Our approach</h3>
+<ul>
+<li>Finite contact resistance</li>
+<li>Exact analytic expression</li>
+<li>Matches previous approaches in appropriate limits</li>
+</ul>
+</section>
+<section class="slides-resistance">
+<h2>Non-local resistance</h2>
+<p>$$\Delta R_{\text{NL}} = 2 P^2 R_N \left\lvert f \right\rvert$$</p>
+<ul class="equations">
+<li>\( r = \frac{R_F + R_C}{R_{\text{SQ}}} W \)</li>
+<li>\( R_{\text{SQ}} = W / \sigma^N \)</li>
+<li>\( R_N = \frac{\lambda}{W L} \frac{1}{\sigma^N} \)</li>
+</ul>
+<p>
+$$ f = \text{Re} \left\{ \left( 2 \left[ \sqrt{1 + i \omega \tau} + (\lambda / r) \right] e^{\left( L / \lambda \right) \sqrt{1 + i \omega \tau}} + (\lambda / r)^2 \frac{ \sinh{\left[ \left( L / \lambda \right) \sqrt{1 + i \omega \tau} \right]}} {\sqrt{1 + i \omega \tau}} \right)^{-1} \right\} $$
+</p>
+<p>Only scales that appear in \( f \)</p>
+<ul class="equations">
+<li>\( L / \lambda \)</li>
+<li>\( \lambda / r \)</li>
+<li>\( \omega \tau \)</li>
+</ul>
+<cite>E. Sosenko, H. Wei, and V. Aji, <a href="https://dx.doi.org/10.1103/PhysRevB.89.245436">Phys. Rev. B 89, 245436 (2014)</a>.</cite>
+</section>
+<section class="slides-fits">
+<h2>Fits</h2>
+<div class="main">
+<div>
+<h3>Tunneling contacts</h3>
+<figure>
+<figcaption>
+Fit to parallel field data from Fig. 4a of W. Han, et al.
+</figcaption>
+<img src="deck-doctoral-thesis/images/spin-lifetime/fig_4a_difference-b0b58a56.svg">
+</figure>
+<ul class="equations">
+<li>
+\( L = 2.1 \: \mu \text{m} \)
+</li><li>
+\( P = 0.19 \: \)
+</li><li>
+\( R_\text{C} = 2.03 \times 10^7 \: \text{k} \Omega \)
+</li><li>
+\( \tau = 514.3 \: \text{ps} \)
+</li><li>
+\( D = 0.02 \: \text{m}^2 \text{s}^{-1} \)
+</li>
+</ul>
+</div>
+<div>
+<h3>Tunneling contacts</h3>
+<figure>
+<figcaption>
+Fit to parallel field data from Fig. 4b of W. Han, et al.
+</figcaption>
+<img src="deck-doctoral-thesis/images/spin-lifetime/fig_4b_difference-1c5ed950.svg">
+</figure>
+<ul class="equations">
+<li>
+\( L = 5.5 \: \mu \text{m} \)
+</li><li>
+\( P = 0.1 \: \)
+</li><li>
+\( R_\text{C} = 6.70 \times 10^6 \: \text{k} \Omega \)
+</li><li>
+\( \tau = 451.84 \: \text{ps} \)
+</li><li>
+\( D = 0.01 \: \text{m}^2 \text{s}^{-1} \)
+</li>
+</ul>
+</div>
+</div>
+<cite>W. Han, K. Pi, K. M. McCreary, Y. Li, J. J. I. Wong, A. G. Swartz, and R. K. Kawakami, <a href="https://dx.doi.org/10.1103/PhysRevLett.105.167202">Phys. Rev. Lett. 105, 167202 (2010)</a>.</cite>
+</section>
+<section class="slides-fits">
+<h2>Fits</h2>
+<div class="main">
+<div>
+<h3>Pinhole contacts</h3>
+<figure>
+<figcaption>
+Fit to parallel field data from Fig. 4c of W. Han, et al.
+</figcaption>
+<img src="deck-doctoral-thesis/images/spin-lifetime/fig_4c_parallel-56ef59c9.svg">
+</figure>
+<ul class="equations">
+<li>
+\( L = 3 \: \mu \text{m} \)
+</li><li>
+\( P = 0.23 \: \)
+</li><li>
+\( R_\text{C} = 2.31 \times 10^7 \: \text{k} \Omega \)
+</li><li>
+\( \tau = 132.28 \: \text{ps} \)
+</li><li>
+\( D = 0.02 \: \text{m}^2 \text{s}^{-1} \)
+</li>
+</ul>
+</div>
+<div>
+<h3>Transparent contacts</h3>
+<figure>
+<figcaption>
+Fit to parallel field data from Fig. 4d of W. Han, et al.
+</figcaption>
+<img src="deck-doctoral-thesis/images/spin-lifetime/fig_4d_difference-9f47fc4c.svg">
+</figure>
+<ul class="equations">
+<li>
+\( L = 3 \: \mu \text{m} \)
+</li><li>
+\( P = 0.01 \: \)
+</li><li>
+\( R_\text{C} = 2.94 \: \text{k} \Omega \)
+</li><li>
+\( \tau = 130.36 \: \text{ps} \)
+</li><li>
+\( D = 0.04 \: \text{m}^2 \text{s}^{-1} \)
+</li>
+</ul>
+</div>
+</div>
+<cite>W. Han, K. Pi, K. M. McCreary, Y. Li, J. J. I. Wong, A. G. Swartz, and R. K. Kawakami, <a href="https://dx.doi.org/10.1103/PhysRevLett.105.167202">Phys. Rev. Lett. 105, 167202 (2010)</a>.</cite>
+</section>
+<section class="slides-regimes">
+<h2>Regimes</h2>
+<h3>Zero field</h3>
+<p>
+$$ \Delta R_{\text{NL}} = \left( P_{\Sigma}^L \right)^2 R_N e^{- L / \lambda} $$
+</p>
+<h3>Tunneling contacts</h3>
+<p>
+$$ f^{\infty} = \text{Re} {\frac{e^{- \left( L / \lambda \right) \sqrt{1 + i \omega \tau}}} {2 \sqrt{1 + i \omega \tau}}} $$
+</p>
+<h3>Fits independent of lifetime</h3>
+<p>\( \lambda / r \gg \sqrt{\omega \tau} \gg 1 \)</p>
+<p>
+Zeros determined by $$ L \sqrt{\frac{D}{2 \omega}} + \frac{\pi}{4} = \frac{n \pi}{2} $$
+</p>
+<cite>E. Sosenko, H. Wei, and V. Aji, <a href="https://dx.doi.org/10.1103/PhysRevB.89.245436">Phys. Rev. B 89, 245436 (2014)</a>.</cite>
+</section>
+<section class="slides-fits">
+<h2>Fits: \( \tau \) Independent Limit</h2>
+<div class="main">
+<div>
+<h3>Transparent contacts</h3>
+<figure>
+<figcaption>
+Fit to parallel field data from Fig. 4d of W. Han, et al.
+</figcaption>
+<img src="deck-doctoral-thesis/images/spin-lifetime/fig_4d_difference_large_lifetime-ffe9de57.svg">
+</figure>
+<ul class="equations">
+<li>
+\( L = 3 \: \mu \text{m} \)
+</li><li>
+\( P = 0.02 \: \)
+</li><li>
+\( R_\text{C} = 0.27 \: \text{k} \Omega \)
+</li><li>
+\( \tau = 9.97 \times 10^9 \: \text{ps} \)
+</li><li>
+\( D = 0.02 \: \text{m}^2 \text{s}^{-1} \)
+</li>
+</ul>
+</div>
+<div>
+<h3>Transparent contacts</h3>
+<figure>
+<figcaption>
+Fit to parallel field data from Fig. 4d of W. Han, et al.
+</figcaption>
+<img src="deck-doctoral-thesis/images/spin-lifetime/fig_4d_difference_larger_lifetime-048deacc.svg">
+</figure>
+<ul class="equations">
+<li>
+\( L = 3 \: \mu \text{m} \)
+</li><li>
+\( P = 0.02 \: \)
+</li><li>
+\( R_\text{C} = 0.28 \: \text{k} \Omega \)
+</li><li>
+\( \tau = 9.95 \times 10^13 \: \text{ps} \)
+</li><li>
+\( D = 0.02 \: \text{m}^2 \text{s}^{-1} \)
+</li>
+</ul>
+</div>
+</div>
+<cite>W. Han, K. Pi, K. M. McCreary, Y. Li, J. J. I. Wong, A. G. Swartz, and R. K. Kawakami, <a href="https://dx.doi.org/10.1103/PhysRevLett.105.167202">Phys. Rev. Lett. 105, 167202 (2010)</a>.</cite>
+</section>
+<footer class="slide-end">
+<h1 class="title">
+<span class="title-main">Spin and Valley Physics in Two Dimensional Systems</span>
+<span class="title-sub">Graphene and Superconducting Transition Metal Dichalcogenides</span>
+</h1>
+<p class="authors"><a href="">Evan Sosenko</a></p>
+<div class="marks">
+<img src="deck-doctoral-thesis/images/tmdsc/tmd-crystal-top-4a0352cd.png" alt="TMD crystal">
+<img src="deck-doctoral-thesis/images/ucr-logo-white-a7a5b4f1.svg" alt="">
+</div>
+</footer>
 </article>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js" defer></script>
-<script src="deck-doctoral-thesis/app-28d07519.js" defer></script>
+<script src="deck-doctoral-thesis/app-daa9ec16.js" defer></script>
 </body>
 </html>
