@@ -36,7 +36,7 @@ exports.config = {
   plugins: {
     digest: {
       prependHost: {
-        production: 'deck-doctoral-thesis'
+        production: '/deck-doctoral-thesis'
       },
       referenceFiles: /\.(css|html|js)$/
     },
