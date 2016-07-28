@@ -169,6 +169,47 @@ a {
   }
 }
 
+.slide-spin-overview {
+  @include media('>=xga') {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media('<xga') {
+      flex-direction: column;
+    }
+
+    @include media('>=xga') {
+      flex-wrap: wrap;
+    }
+
+    > div {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      @include media('>=xga') {
+        width: 50%;
+      }
+    }
+  }
+
+  figure {
+    @include media('>=xga') {
+      width: 45%;
+      margin-top: 9rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
 .slide-geometry {
   @include media('<xga') {
     display: flex;
