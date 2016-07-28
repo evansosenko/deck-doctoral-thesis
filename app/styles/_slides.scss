@@ -141,6 +141,7 @@ a {
   }
 
   .background-2d-bullets {
+    @include slide-font-size(1.17em);
     align-self: center;
   }
 
@@ -207,6 +208,12 @@ a {
 
   img {
     width: 100%;
+  }
+
+  .outline {
+    @include media('>=xga') {
+      @include slide-font-size(1.4em);
+    }
   }
 }
 
