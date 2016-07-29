@@ -36,7 +36,7 @@ p {
 
 h1 {
   @include slide-font-size(4rem);
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 200;
   letter-spacing: 4px;
   text-align: center;
@@ -74,6 +74,5 @@ figcaption {
 .authors {
   @include slide-font-size(3rem);
   font-family: $font-family-author;
-  font-size: 2rem;
   font-weight: 300;
 }
