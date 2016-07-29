@@ -133,6 +133,7 @@ a {
   .background-2d-bullets {
     @include slide-font-size(1.17em);
     align-self: center;
+    line-height: 1.5em;
   }
 
   .background-spin {
