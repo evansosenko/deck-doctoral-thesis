@@ -284,3 +284,16 @@ a {
   justify-content: space-around;
   text-align: center;
 }
+
+.slide-spin-software {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3,
+  p {
+    @include slide-font-size(1.4em);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
