@@ -326,12 +326,19 @@ a {
 
   .main {
     @include slide-font-size(1.06em);
-    display: flex;
-    align-items: center;
-    line-height: 2em;
+
+    @include media('>=xga') {
+      display: flex;
+      align-items: center;
+      line-height: 2em;
+    }
 
     figure {
       order: -1;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
