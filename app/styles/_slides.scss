@@ -326,12 +326,46 @@ a {
 
   .main {
     @include slide-font-size(1.06em);
-    line-height: 2em;
     display: flex;
     align-items: center;
+    line-height: 2em;
 
     figure {
       order: -1;
+    }
+  }
+}
+
+.slide-energy {
+  @include distribute-vert
+
+  .bands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    @include media('>=xga') {
+      flex-direction: row;
+      align-items: initial;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .values {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+
+    @include media('>=xga') {
+      flex-direction: column;
+    }
+
+    li {
+      list-style: none;
     }
   }
 }
