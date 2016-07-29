@@ -1,3 +1,9 @@
+@mixin distribute-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 section {
   background-color: color(slide-bg);
   color: color(slide-text);
@@ -97,10 +103,8 @@ a {
 }
 
 .slide-end {
-  display: flex;
-  flex-direction: column;
+  @include distribute-vert
   align-items: center;
-  justify-content: space-between;
   background-color: color(title-bg);
   color: color(title-text);
 
@@ -158,18 +162,15 @@ a {
 
 .slide-spin-overview {
   @include media('>=xga') {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include distribute-vert
   }
 
   .main {
-    display: flex;
+    @include distribute-vert
     align-items: center;
-    justify-content: space-between;
 
-    @include media('<xga') {
-      flex-direction: column;
+    @include media('>=xga') {
+      flex-direction: row;
     }
 
     @include media('>=xga') {
@@ -204,17 +205,9 @@ a {
 }
 
 .slide-geometry {
-  @include media('<xga') {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
   .main {
-    display: flex;
-    flex-direction: column;
+    @include distribute-vert
     align-items: center;
-    justify-content: center;
 
     @include media('>=xga') {
       flex-direction: row;
@@ -243,16 +236,12 @@ a {
 }
 
 .slide-spin-motivation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  @include distribute-vert
 }
 
 .slide-resistance {
-  display: flex;
-  flex-direction: column;
+  @include distribute-vert
   align-items: center;
-  justify-content: space-between;
   text-align: center;
 }
 
@@ -287,16 +276,13 @@ a {
 }
 
 .slide-regimes {
-  display: flex;
-  flex-direction: column;
+  @include distribute-vert
   align-items: center;
-  justify-content: space-around;
   text-align: center;
 }
 
 .slide-spin-software {
-  display: flex;
-  flex-direction: column;
+  @include distribute-vert
   align-items: center;
 
   h3,
@@ -308,10 +294,8 @@ a {
 }
 
 .slide-tmdsc-overview {
-  display: flex;
-  flex-direction: column;
+  @include distribute-vert
   align-items: center;
-  justify-content: space-between;
 
   @include media('>=xga') {
     @include slide-font-size(1.4em);
