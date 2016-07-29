@@ -11,6 +11,8 @@ html {
   }
 
   &.js {
-    overflow-y: hidden;
+    @include media('>=xga') {
+      overflow-y: hidden;
+    }
   }
 }

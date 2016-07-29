@@ -479,10 +479,10 @@
       "from": "bespoke-keys@>=1.1.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/bespoke-keys/-/bespoke-keys-1.1.0.tgz"
     },
-    "bespoke-touch": {
-      "version": "1.0.0",
-      "from": "bespoke-touch@>=1.0.0 <2.0.0",
-      "resolved": "https://registry.npmjs.org/bespoke-touch/-/bespoke-touch-1.0.0.tgz"
+    "bespoke-nav-touch": {
+      "version": "1.0.1",
+      "from": "bespoke-nav-touch@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/bespoke-nav-touch/-/bespoke-nav-touch-1.0.1.tgz"
     },
     "bin-build": {
       "version": "2.2.0",

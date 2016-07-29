@@ -2,7 +2,7 @@ import bespoke from 'bespoke'
 import classes from 'bespoke-classes'
 import hash from 'bespoke-hash'
 import keys from 'bespoke-keys'
-import touch from 'bespoke-touch'
+import touch from 'bespoke-nav-touch'
 
 const plugins = [
   classes(),
