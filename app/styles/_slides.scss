@@ -96,6 +96,10 @@ a {
   background-color: color(title-bg);
   color: color(title-text);
 
+  h4 {
+    margin: 0.5rem;
+  }
+
   .authors {
     @include slide-font-size(2em);
   }
