@@ -11,7 +11,7 @@
 <meta property="og:description" content="Spin and valley physics in two dimensional systems: Graphene and superconducting transition metal dichalcogenides.">
 <link rel="canonical" href="https://evansosenko.comdeck-doctoral-thesis/">
 <meta property="og:url" content="https://evansosenko.comdeck-doctoral-thesis/">
-<meta property="og:updated_time" content="2016-07-29T19:16:49.109Z">
+<meta property="og:updated_time" content="2016-07-29T20:34:58.864Z">
 <meta property="og:site_name" content="deck-doctoral-thesis">
 <meta name="application-name" content="deck-doctoral-thesis">
 <meta property="og:locale" content="en_US">
@@ -22,7 +22,7 @@
 <meta name="msapplication-config" content="none">
 <meta name="mobile-web-app-capable" content="yes">
 <link type="text/plain" rel="author" href="deck-doctoral-thesis/humans.txt">
-<link rel="stylesheet" href="/deck-doctoral-thesis/app-9eb3f25c.css">
+<link rel="stylesheet" href="/deck-doctoral-thesis/app-0ae24c2a.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
 <link rel="icon" type="image/png" href="/deck-doctoral-thesis/favicon/favicon-196x196-a91381e1.png" sizes="196x196">
 <link rel="icon" type="image/png" href="/deck-doctoral-thesis/favicon/favicon-96x96-c83f6475.png" sizes="96x96">
@@ -68,7 +68,7 @@
 <h2>Background</h2>
 <div class="background-2d">
 <figure class="fig-graphene">
-<img src="/deck-doctoral-thesis/images/graphene-5f08708c.jpg" alt="">
+<img src="/deck-doctoral-thesis/images/graphene-5f08708c.jpg" alt="Graphene">
 <figcaption>
 By AlexanderAlUS (Own work) [<a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0
 </a>
@@ -132,7 +132,7 @@ Theoretical predictions longer than measured: \( \text{ms} \) vs. \( \text{ps} \
 </ol>
 </div>
 <figure>
-<img src="/deck-doctoral-thesis/images/spin-lifetime/device-8dcbd621.svg">
+<img src="/deck-doctoral-thesis/images/spin-lifetime/device-8dcbd621.svg" alt="Spintronic device">
 </figure>
 <div class="outline">
 <h3>Outline</h3>
@@ -156,7 +156,7 @@ Theoretical predictions longer than measured: \( \text{ms} \) vs. \( \text{ps} \
 <li>\( \omega = g \mu_B B / \hbar \)</li>
 </ul>
 <figure class="device">
-<img class="spin-valve" src="/deck-doctoral-thesis/images/spin-lifetime/tikz-nonlocal_spin_valve-668083ef.png">
+<img class="spin-valve" src="/deck-doctoral-thesis/images/spin-lifetime/tikz-nonlocal_spin_valve-668083ef.png" alt="Nonlocal spin valve">
 </figure>
 <ul class="equations">
 <li>
@@ -422,6 +422,58 @@ github.com/razor-x/scipy-data_fitting
 <figure class="crystal">
 <img src="/deck-doctoral-thesis/images/tmdsc/tmd-crystal-side-54d576cc.png" alt="TMD crystal (side view)">
 </figure>
+</div>
+</section>
+<section class="slide-tmds">
+<h2>TMD monolayers</h2>
+<div class="main">
+<ul>
+<li>
+Direct band gap semiconductors: \( \mathrm{MoS_2} \), \( \mathrm{WS_2} \), \( \mathrm{MoSe_2} \), \( \mathrm{WSe_2} \)
+</li>
+<li><strong>Break inversion symmetry</strong> ⇒ gapped out spectrum</li>
+<li><strong>Two inequivalent valleys </strong>⇒ new degree of freedom</li>
+<li>
+<strong>Strong spin-orbit coupling</strong> ⇒ large valance band spin-splitting
+</li>
+<li>Opposite valley Berry curvature</li>
+<li>Optical valley probe and valley Hall effect</li>
+<li>
+Two state tight binding model: \( d_{z^2} \), and \( d_{xy} \pm i d_{x^2 - y^2} \)
+</li>
+</ul>
+<figure>
+<img src="/deck-doctoral-thesis/images/tmdsc/bands.svg" alt="">
+</figure>
+</div>
+<p>
+$$ H_0^{\tau s} \left( \mathbf{k} \right) = a t \left(\tau k_x s_x + k_y s_y \right) \otimes I_2 + \frac{\Delta}{2} s_z \otimes I_2 - \lambda \tau \left(\sigma_z - 1 \right) \otimes S_z $$
+</p>
+<cite>D. Xiao, G.-B. Liu, W. Feng, X. Xu, and W. Yao, <a href="https://dx.doi.org/10.1103/PhysRevLett.108.196802">Phys. Rev. Lett. 108, 196802 (2012)</a>.</cite>
+</section>
+<section class="slide-energy">
+<h2>Energy bands</h2>
+<div class="bands">
+<figure>
+<img src="/deck-doctoral-thesis/images/tmdsc/energy-bands-f6e87bbd.svg" alt="Energy bands">
+</figure>
+<div class="values">
+<ul>
+<li>\( \Delta \)—band splitting</li>
+<li>\( \lambda \)—spin splitting</li>
+<li>\( \tau \)—valley index</li>
+<li>\( s \)—spin index</li>
+</ul>
+<ul>
+<li>\( a t = 3.15 \) Å eV</li>
+<li>\( \Delta = 1.66 \) eV</li>
+<li>\( 2 \lambda = 0.15 \) eV</li>
+<li>\( \mu = -0.83 \) eV</li>
+</ul>
+</div>
+</div>
+<div>
+$$ E_{\tau \sigma}^n \left( \mathbf{k} \right) = \frac{1}{2} \left( \lambda \tau \sigma + n \sqrt{(2 a t)^2 {\left\lvert \mathbf{k} \right\rvert}^2 + {\left( \Delta - \lambda \tau \sigma \right)}^2} \right) $$
 </div>
 </section>
 <footer class="slide-end">
