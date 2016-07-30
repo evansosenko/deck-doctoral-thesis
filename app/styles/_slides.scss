@@ -376,3 +376,16 @@ a {
     }
   }
 }
+
+.slide-tmd-optical {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 90%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
