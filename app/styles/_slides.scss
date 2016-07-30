@@ -13,6 +13,10 @@ section {
     text-align: center;
   }
 
+  h4 {
+    margin: 1.5rem 0;
+  }
+
   strong {
     color: color(bold-text);
   }
@@ -389,3 +393,25 @@ a {
     width: 100%;
   }
 }
+
+.slide-hall {
+  @include distribute-vert
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  figure {
+    margin-bottom: 3rem;
+  }
+
+  .hall-effect {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
