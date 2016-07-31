@@ -263,6 +263,8 @@ a {
 }
 
 .slide-fits {
+  @include distribute-vert
+
   .main {
     display: flex;
     justify-content: center;
