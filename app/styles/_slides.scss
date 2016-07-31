@@ -301,7 +301,8 @@ a {
 }
 
 .slide-spin-software {
-  @include distribute-vert
+  display: flex;
+  flex-direction: column;
   align-items: center;
 
   h3,
