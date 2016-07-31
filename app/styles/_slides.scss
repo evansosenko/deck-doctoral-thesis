@@ -241,7 +241,19 @@ a {
 }
 
 .slide-spin-motivation {
-  @include distribute-vert
+  .equations {
+    @include media('>=xga') {
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+    }
+  }
+
+  .approach {
+    @include media('>=xga') {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .slide-resistance {

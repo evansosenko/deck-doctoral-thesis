@@ -150,32 +150,49 @@
 
 <section class="slide-spin-motivation">
   <h2>Motivation for solution</h2>
-  <h3>Existing results</h3>
-  <ul>
-    <li>All existing analytic expressions ignore contact resistance</li>
-    <li>Assume infinite resistance for convenience</li>
-    <li>Integral form widely used but difficult to fit</li>
-    <li>Only a numeric treatment of finite contact resistance</li>
-  </ul>
-  <p>
-    $$
-    R_{\text{NL}} \propto \text{Re}
-    {\frac{e^{- \left( L / \lambda \right) \sqrt{1 + i \omega \tau}}}
-    {2 \sqrt{1 + i \omega \tau}}}
-    $$
-  </p>
-  <p>
-    $$
-    R_{\text{NL}} \propto \int_0^{\infty} \frac{1}{\sqrt{4 \pi D t}}
-    \exp{\left[ - \frac{L^2}{4 D t} \right]} e^{-t / \tau} \cos{\omega t} \: dt
-    $$
-  </p>
-  <h3>Our approach</h3>
-  <ul>
-    <li>Finite contact resistance</li>
-    <li>Exact analytic expression</li>
-    <li>Matches previous approaches in appropriate limits</li>
-  </ul>
+  <div>
+    <h3>Existing results</h3>
+    <ul>
+      <li>All existing analytic expressions ignore contact resistance</li>
+      <li>Assume infinite resistance for convenience</li>
+      <li>Integral form widely used but difficult to fit</li>
+      <li>Only a numeric treatment of finite contact resistance</li>
+    </ul>
+  </div>
+  <div class="equations">
+    <p>
+      $$
+      R_{\text{NL}} \propto \text{Re}
+      {\frac{e^{- \left( L / \lambda \right) \sqrt{1 + i \omega \tau}}}
+      {2 \sqrt{1 + i \omega \tau}}}
+      $$
+    </p>
+    <p>
+      $$
+      R_{\text{NL}} \propto \int_0^{\infty} \frac{1}{\sqrt{4 \pi D t}}
+      \exp{\left[ - \frac{L^2}{4 D t} \right]} e^{-t / \tau} \cos{\omega t} \: dt
+      $$
+    </p>
+  </div>
+  <div class="approach">
+    <div>
+      <h3>Our approach</h3>
+      <ul>
+        <li>Finite contact resistance</li>
+        <li>Exact analytic expression</li>
+        <li>Matches previous approaches in appropriate limits</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Computation</h3>
+      <ul>
+        <li>Drift diffusion equation in contacts and semiconductor</li>
+        <li>Continuity of current and spin current at boundary</li>
+        <li>Conservation of current and spin</li>
+        <li>Solution gives nonlocal resistance</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section class="slide-resistance">
