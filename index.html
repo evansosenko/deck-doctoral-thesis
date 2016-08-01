@@ -11,7 +11,7 @@
 <meta property="og:description" content="Spin and valley physics in two dimensional systems: Graphene and superconducting transition metal dichalcogenides.">
 <link rel="canonical" href="https://evansosenko.com/deck-doctoral-thesis/">
 <meta property="og:url" content="https://evansosenko.com/deck-doctoral-thesis/">
-<meta property="og:updated_time" content="2016-08-01T00:22:56.508Z">
+<meta property="og:updated_time" content="2016-08-01T05:43:54.589Z">
 <meta property="og:site_name" content="deck-doctoral-thesis">
 <meta name="application-name" content="deck-doctoral-thesis">
 <meta property="og:locale" content="en_US">
@@ -83,10 +83,10 @@ via Wikimedia Commons
 <div class="background-2d-bullets">
 <h3>2D Materials promise novel application</h3>
 <ul>
-<li>Strong, flexible &amp; transparent</li>
 <li><strong>Graphene</strong> discovered 2004</li>
 <li>2D hexagonal carbon lattice, high electron mobility</li>
 <li>Relativistic low-energy model: Dirac cones, linear dispersion</li>
+<li>Strong, flexible &amp; transparent</li>
 <li><strong>Monolayer TMDs</strong>: also hexagonal lattice</li>
 <li>Gapped with strong spin-orbit coupling</li>
 <li>Both excellent candidates for spintronic devices</li>
@@ -561,7 +561,7 @@ $$ H^A = \sum_{\mathbf{k}, \tau, s, n, n'} \frac{e A_0}{m_0} \mathbf{\epsilon} \
 <div>
 <h3>Substrate induced</h3>
 <p>
-$$ V = - \sum_{\mathbf{k} \nu \tau} \Delta_{\nu} {d^{\nu}_{\tau}}^{\dagger} \left( \mathbf{k} \right) d^{\nu}_{-\tau} \left( \mathbf{k} \right) $$
+$$ V = - \sum_{\mathbf{k} \nu \tau} B_{\nu} {d^{\nu}_{\tau}}^{\dagger} \left( \mathbf{k} \right) d^{\nu}_{-\tau} \left( \mathbf{k} \right) $$
 </p>
 </div>
 <div>
@@ -571,52 +571,69 @@ $$ V = \frac{1}{2} \sum_{\mathbf{R} \mathbf{R'}} v_{\mathbf{R} \mathbf{R'}} :n_{
 </p>
 <p>Assume even pairing interaction</p>
 </div>
+<div>
+<h3>BCS Hamiltonian</h3>
+<p>
+$$ H - \mu N = \sum_{\mathbf{k} \sigma} \xi_{\mathbf{k}} c_{\mathbf{k} \sigma}^{\dagger} c_{\mathbf{k} \sigma} - \sum_{\mathbf{k}} \left( \bar{\Delta}_{\mathbf{k}} c_{-\mathbf{k} \downarrow} c_{\mathbf{k} \uparrow} + \Delta_{\mathbf{k}} c_{\mathbf{k} \uparrow}^{\dagger} c_{-\mathbf{k} \downarrow}^{\dagger} \right) = \sum_{\mathbf{k} \sigma} \lambda_{\mathbf{k}} \gamma_{\mathbf{k} \sigma}^{\dagger} \gamma_{\mathbf{k} \sigma} $$
+</p>
+</div>
 </section>
 <section class="slide-channels">
 <h2>Superconducting channels</h2>
-<ul>
+<h3>Induced</h3>
+<p>
+$$ \Delta_{\mathbf{k}} = \frac{1}{2} \left( B_+ + B_- \right) - \frac{1}{2} \left( B_+ - B_- \right) \cos{\theta_{\mathbf{k}}} $$
+</p>
+<h3>Intrinsic</h3>
+<p>
+$$ \Delta_{\mathbf{k}} = \chi_0 \cdot f_{\mathbf{k}} $$
+</p>
+<h4>Gap equation</h4>
+<p>
+$$ \chi_0 = \frac{v_0}{2} \sum_{\mathbf{k}} \frac{f_{\mathbf{k}} \cdot \chi_0}{\lambda_{\mathbf{k}}} \bar{f}_{\mathbf{k}} $$
+</p>
+<ul class="steps">
 <li>Project into upper-valance bands (\( \tau = s \))</li>
 <li>
 Mean field theory BCS-type solutions: gap function \( \Delta_{\mathbf{k}} \)
 </li>
+<li>Different \( f_{\mathbf{k}} \) per channel</li>
 <li>\( m = 0 \) <strong>intervalley</strong> channel always dominates</li>
 <li>
 Both classes give <strong>constant gap function</strong>
 for dominant paring
 </li>
 </ul>
-<h3>Induced</h3>
-<p>
-$$ \Delta_{\mathbf{k}} = \frac{1}{2} \left( \Delta_+ + \Delta_- \right) - \frac{1}{2} \left( \Delta_+ - \Delta_- \right) \cos{\theta_{\mathbf{k}}} $$
-</p>
-<h3>Intrinsic</h3>
-<p>
-$$ \Delta_{\mathbf{k}} = g_{\mathbf{k}} v_0 \sum_{\mathbf{k}'} g^*_{\mathbf{k}'} \langle c_{-\mathbf{k}' \alpha'} c_{\mathbf{k}' \alpha} \rangle $$
-</p>
 </section>
 <section class="slide-optical">
 <h2>Optical coupling</h2>
 <div class="main">
+<figure>
+<img src="/deck-doctoral-thesis/images/tmdsc/optical-transitions-bcs-c4dc2513.svg" alt="Optical transition rate">
+</figure>
 <ul>
 <li>
-Harmonic perturbation ⇒ correlated phase's optical transition rates
+\( \mathbf{A} / A_0 = \mathbf{\epsilon} e^{i \omega t} + \mathbf{\epsilon}^* e^{-i \omega t} \), \( \mathbf{k} \rightarrow \mathbf{k} + e \mathbf{A} \)
 </li>
 <li>
-\( \mathbf{A} / |\mathbf{A}| = \mathbf{\epsilon} e^{i \omega t} + \mathbf{\epsilon}^* e^{-i \omega t} \), \( \mathbf{k} \rightarrow \mathbf{k} + e \mathbf{A} \)
+Harmonic perturbation ⇒ correlated phase's optical transition rates
 </li>
 <li>
 Valley selection <strong>remains coupled</strong>
 to circularly polarized light
 </li>
 </ul>
-<figure>
-<img src="/deck-doctoral-thesis/images/tmdsc/optical-transitions-bcs-c4dc2513.svg" alt="Optical transition rate">
-</figure>
+<div>
+$$ H^A = \sum_{\mathbf{k}, \tau, s, n, n'} \frac{e A_0}{m_0} \mathbf{\epsilon} \cdot \mathbf{P}_{\tau s}^{n n'} \left( \mathbf{k} \right) {c_{\tau s}^n}^{\dagger} \left( \mathbf{k} \right) c_{\tau s}^{n'} \left( \mathbf{k} \right) $$
+</div>
 </div>
 </section>
 <section class="slide-curvature">
 <h2>Berry curvature</h2>
 <div class="main">
+<figure>
+<img src="/deck-doctoral-thesis/images/tmdsc/bcs-pairs-ed5a4a01.svg" alt="Optical transition rate">
+</figure>
 <ul>
 <li>BCS ground state has zero net curvature</li>
 <li>
@@ -624,9 +641,6 @@ Optical pair-breaking ⇒ selectively excite carriers in single valley
 </li>
 <li>Berry curvature retains relative sign relations</li>
 </ul>
-<figure>
-<img src="/deck-doctoral-thesis/images/tmdsc/bcs-pairs-ed5a4a01.svg" alt="Optical transition rate">
-</figure>
 </div>
 </section>
 <section class="slide-conclusion">
