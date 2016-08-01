@@ -588,18 +588,6 @@
 
 <section class="slide-channels">
   <h2>Superconducting channels</h2>
-  <ul>
-    <li>Project into upper-valance bands (\( \tau = s \))</li>
-    <li>
-      Mean field theory BCS-type solutions:
-      gap function \( \Delta_{\mathbf{k}} \)
-    </li>
-    <li>\( m = 0 \) <strong>intervalley</strong> channel always dominates</li>
-    <li>
-      Both classes give <strong>constant gap function</strong>
-      for dominant paring
-    </li>
-  </ul>
   <h3>Induced</h3>
   <p>
     $$
@@ -612,13 +600,31 @@
   <h3>Intrinsic</h3>
   <p>
     $$
-    \Delta_{\mathbf{k}} =
-    g_{\mathbf{k}}
-    v_0 \sum_{\mathbf{k}'}
-    g^*_{\mathbf{k}'}
-    \langle c_{-\mathbf{k}' \alpha'} c_{\mathbf{k}' \alpha} \rangle
+    \Delta_{\mathbf{k}} = \chi_0 \cdot f_{\mathbf{k}}
     $$
   </p>
+  <h4>Gap equation</h4>
+  <p>
+    $$
+    \chi_0
+    = \frac{v_0}{2} \sum_{\mathbf{k}}
+    \frac{f_{\mathbf{k}} \cdot \chi_0}{\lambda_{\mathbf{k}}}
+    \bar{f}_{\mathbf{k}}
+    $$
+  </p>
+  <ul class="steps">
+    <li>Project into upper-valance bands (\( \tau = s \))</li>
+    <li>
+      Mean field theory BCS-type solutions:
+      gap function \( \Delta_{\mathbf{k}} \)
+    </li>
+    <li>Different \( f_{\mathbf{k}} \) per channel</li>
+    <li>\( m = 0 \) <strong>intervalley</strong> channel always dominates</li>
+    <li>
+      Both classes give <strong>constant gap function</strong>
+      for dominant paring
+    </li>
+  </ul>
 </section>
 
 <section class="slide-optical">
