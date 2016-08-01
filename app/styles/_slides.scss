@@ -401,7 +401,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 90%;
+
+    @include media('>=xga') {
+      height: 90%;
+    }
   }
 
   img {
@@ -421,12 +424,8 @@ a {
     margin-bottom: 3rem;
   }
 
-  .hall-effect {
-    width: 50%;
-
-    img {
-      width: 100%;
-    }
+  img {
+    width: 100%;
   }
 }
 
@@ -450,14 +449,22 @@ a {
     text-align: center;
   }
 
+  img {
+    width: 100%;
+  }
+
   .main {
-    display: flex;
-    justify-content: space-around;
+    @include media('>=xga') {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   .steps {
-    align-self: flex-end;
-    width: 46%;
+    @include media('>=xga') {
+      align-self: flex-end;
+      width: 46%;
+    }
   }
 }
 
