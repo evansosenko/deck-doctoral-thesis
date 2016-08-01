@@ -415,10 +415,6 @@ a {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-
-    @include media('>=xga') {
-      margin-top: 5rem;
-    }
   }
 
   figure {
