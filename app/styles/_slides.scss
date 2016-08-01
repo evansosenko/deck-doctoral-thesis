@@ -363,8 +363,6 @@ a {
 }
 
 .slide-energy {
-  @include distribute-vert
-
   .bands {
     display: flex;
     flex-direction: column;
@@ -374,6 +372,8 @@ a {
     @include media('>=xga') {
       flex-direction: row;
       align-items: initial;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
     }
 
     img {
@@ -410,13 +410,15 @@ a {
 }
 
 .slide-hall {
-  @include distribute-vert
-
   .main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include media('>=xga') {
+      margin-top: 5rem;
+    }
   }
 
   figure {
