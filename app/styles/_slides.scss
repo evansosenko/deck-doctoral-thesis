@@ -410,6 +410,14 @@ a {
     }
   }
 
+  figure {
+    margin-bottom: 3rem;
+
+    @include media('>=xga') {
+      width: 50%;
+    }
+  }
+
   img {
     width: 100%;
   }
