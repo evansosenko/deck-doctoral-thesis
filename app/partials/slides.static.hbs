@@ -630,31 +630,46 @@
 <section class="slide-optical">
   <h2>Optical coupling</h2>
   <div class="main">
+    <figure>
+      <img src="DIGEST(/images/tmdsc/optical-transitions-bcs.svg)"
+           alt="Optical transition rate">
+    </figure>
     <ul>
       <li>
-        Harmonic perturbation ⇒ correlated phase's optical transition rates
-      </li>
-      <li>
-        \( \mathbf{A} / |\mathbf{A}| =
+        \( \mathbf{A} / A_0 =
         \mathbf{\epsilon} e^{i \omega t}
         + \mathbf{\epsilon}^* e^{-i \omega t} \),
         \( \mathbf{k} \rightarrow \mathbf{k} + e \mathbf{A} \)
+      </li>
+      <li>
+        Harmonic perturbation ⇒ correlated phase's optical transition rates
       </li>
       <li>
         Valley selection <strong>remains coupled</strong>
         to circularly polarized light
       </li>
     </ul>
-    <figure>
-      <img src="DIGEST(/images/tmdsc/optical-transitions-bcs.svg)"
-           alt="Optical transition rate">
-    </figure>
+    <div>
+      $$
+      H^A
+      = \sum_{\mathbf{k}, \tau, s, n, n'}
+      \frac{e A_0}{m_0}
+      \mathbf{\epsilon} \cdot
+      \mathbf{P}_{\tau s}^{n n'} \left( \mathbf{k} \right)
+      {c_{\tau s}^n}^{\dagger} \left( \mathbf{k} \right)
+      c_{\tau s}^{n'} \left( \mathbf{k} \right)
+      $$
+    </div>
   </div>
 </section>
 
 <section class="slide-curvature">
   <h2>Berry curvature</h2>
   <div class="main">
+    <figure>
+      <img src="DIGEST(/images/tmdsc/bcs-pairs.svg)"
+           alt="Optical transition rate">
+    </figure>
     <ul>
       <li>BCS ground state has zero net curvature</li>
       <li>
@@ -662,10 +677,6 @@
       </li>
       <li>Berry curvature retains relative sign relations</li>
     </ul>
-    <figure>
-      <img src="DIGEST(/images/tmdsc/bcs-pairs.svg)"
-           alt="Optical transition rate">
-    </figure>
   </div>
 </section>
 
